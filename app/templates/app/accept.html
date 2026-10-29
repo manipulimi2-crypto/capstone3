@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>CV Generator</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="">Name</label>
+            <input type="text" name="name" class="form-control">
+            <label for="">Email</label>
+            <input type="text" name="email" class="form-control">
+            <label for="">Mobile</label>
+            <input type="text" name="mobile" class="form-control">
+            <label for="">About</label>
+            <input type="text" name="about" class="form-control">
+            <label for="">Degree</label>
+            <input type="text" name="degree" class="form-control">
+            <label for="">University</label>
+            <input type="text" name="university" class="form-control">
+            <label for="">School</label>
+            <input type="text" name="school" class="form-control">
+            <label for="">Previous_Work</label>
+            <input type="text" name="previous_work" class="form-control">
+            <label for="">Skills</label>
+            <input type="text" name="skills" class="form-control">
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
